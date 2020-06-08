@@ -1,4 +1,4 @@
-# Javascript
+# [JustJavascript](https://justjavascript.com/)
 
 :point_right: Learn JavaScript
 
