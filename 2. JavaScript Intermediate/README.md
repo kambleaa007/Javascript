@@ -404,4 +404,38 @@ Convert a JavaScript object into a string with JSON.stringify().
         var obj = { name: "John", age: 30, city: "New York" };
         var myJSON = JSON.stringify(obj);
 
+## Prototype Inheritance
+
+## Single threaded JS & Event Loop
+
+Is Javascript Multi threaded or Single threaded”???
+I said Single.
+He then asked, “Then how the ASYNC calls are handled and the UI thread is responsive during the call”???
+I couldn’t answer then.
+
+Javascript is actually single threaded, each tab or window runs a single JS thread. JS engine manages a queue of events to which events are enqued and dequed, when an async call is sent through ajax and its response is received, an event is pushed into that event queue.
+
+JS thread keeps on checking that queue when thread is idle and there is nothing to execute, if there is something in the queue, it pops it out and execute.
+
+The single threaded behavior can be understood by the example that there are two events in the event queue for ajax response received and one for a mouse over,
+but we are executing an infinite loop in the current JS thread,
+those callbacks will not get a chance to run no matter their time has come and will always be executed when the thread is idle.
+
+## Promises
+
+A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+        fetch()
+           .then(res).catch(err)
+
+or
+
+        var p1 = fetch("http://1");
+        var p2 = fetch("http://11");
+        var p3 = fetch("http://111");
+
+        Promise.all([p1, p2, p3]).then(function(students) {
+        console.log("All the students are here: " + students);
+        });
+
 To Be Continued...
