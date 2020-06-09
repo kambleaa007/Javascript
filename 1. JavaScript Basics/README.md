@@ -154,6 +154,7 @@ Or maybe you’ve performed a REST API request and you want the data to fully lo
 
 ES5 -> Async and Await promises  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/5.png" width="600" height="200">
+
 ES6 -> Async and Await promises (arrow functions)  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/6.png" width="600" height="200">
 
@@ -168,5 +169,6 @@ have a recursive structure of callbacks (callbacks within callbacks within callb
 
 ES5 -> JavaScript Callback  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/7.png" width="500" height="380">
+
 ES6 -> JavaScript Callback (arrow functions)  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/8.png" width="500" height="380">
