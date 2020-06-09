@@ -167,6 +167,6 @@ callback hell
 have a recursive structure of callbacks (callbacks within callbacks within callbacks and so forth). This is not practical.
 
 ES5 -> JavaScript Callback
-<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/7.png" width="400" height="400">
+<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/7.png" width="500" height="380">
 ES6 -> JavaScript Callback (arrow functions)
-<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/8.png" width="400" height="400">
+<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/8.png" width="500" height="380">
