@@ -152,9 +152,9 @@ Or maybe you’ve performed a REST API request and you want the data to fully lo
 2. Controls the behavior
 3. Reduces “callback hell”
 
-ES5 -> Async and Await promises
+ES5 -> Async and Await promises  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/5.png" width="600" height="200">
-ES6 -> Async and Await promises (arrow functions)
+ES6 -> Async and Await promises (arrow functions)  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/6.png" width="600" height="200">
 
 ## Callback
@@ -166,7 +166,7 @@ A callback is a way to make asynchronous operations more synchronous (sequential
 callback hell
 have a recursive structure of callbacks (callbacks within callbacks within callbacks and so forth). This is not practical.
 
-ES5 -> JavaScript Callback
+ES5 -> JavaScript Callback  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/7.png" width="500" height="380">
-ES6 -> JavaScript Callback (arrow functions)
+ES6 -> JavaScript Callback (arrow functions)  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/8.png" width="500" height="380">
