@@ -125,19 +125,20 @@ The lexical scope consists of the outer function scopes determined statically. A
 
 Immediately Invoked Function Expression
 
-ES5 -> JavaScript IIFE (Immediately Invoked Function Expression)
+ES5 -> JavaScript IIFE (Immediately Invoked Function Expression)  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/1.png" width="400" height="400">
 
-ES6 -> JavaScript IIFE (arrow functions)
+ES6 -> JavaScript IIFE (arrow functions)  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/2.png" width="400" height="400">
 
 ## MVC
 
 Model-view-controller is a design-framework (\*not a programming language) that allows us to separate behavior into a practical real-world structure. Almost 85% of web-based applications today have this underlying pattern in one way or the other.
 
-ES5 -> Model-view-controller design-pattern
+ES5 -> Model-view-controller design-pattern  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/3.png" width="600" height="200">
-ES6 -> Model-view-controller design-pattern (arrow functions)
+
+ES6 -> Model-view-controller design-pattern (arrow functions)  
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/4.png" width="600" height="200">
 
 ## async / await
