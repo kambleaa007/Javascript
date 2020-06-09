@@ -127,10 +127,9 @@ Immediately Invoked Function Expression
 
 ES5 -> JavaScript IIFE (Immediately Invoked Function Expression)
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/1.png" width="400" height="400">
-</br>
+
 ES6 -> JavaScript IIFE (arrow functions)
 <img src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/2.png" width="400" height="400">
-</br>
 
 ## MVC
 
