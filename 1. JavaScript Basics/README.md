@@ -135,9 +135,9 @@ ES6 -> JavaScript IIFE (arrow functions)
 Model-view-controller is a design-framework (\*not a programming language) that allows us to separate behavior into a practical real-world structure. Almost 85% of web-based applications today have this underlying pattern in one way or the other.
 
 ES5 -> Model-view-controller design-pattern
-<img align="left" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/3.png" width="400" height="400">
+<img align="left" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/3.png" width="600" height="200">
 ES6 -> Model-view-controller design-pattern (arrow functions)
-<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/4.png" width="400" height="400">
+<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/4.png" width="600" height="200">
 
 ## async / await
 
@@ -151,9 +151,9 @@ Or maybe you’ve performed a REST API request and you want the data to fully lo
 3. Reduces “callback hell”
 
 ES5 -> Async and Await promises
-<img align="left" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/5.png" width="400" height="400">
+<img align="left" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/5.png" width="600" height="200">
 ES6 -> Async and Await promises (arrow functions)
-<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/6.png" width="400" height="400">
+<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/6.png" width="600" height="200">
 
 ## Callback
 
