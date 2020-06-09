@@ -126,15 +126,18 @@ The lexical scope consists of the outer function scopes determined statically. A
 Immediately Invoked Function Expression
 
 ES5 -> JavaScript IIFE (Immediately Invoked Function Expression)
+<img align="left" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/1.png" width="400" height="400">
 ES6 -> JavaScript IIFE (arrow functions)
+<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/2.png" width="400" height="400">
 
 ## MVC
 
 Model-view-controller is a design-framework (\*not a programming language) that allows us to separate behavior into a practical real-world structure. Almost 85% of web-based applications today have this underlying pattern in one way or the other.
 
 ES5 -> Model-view-controller design-pattern
-
+<img align="left" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/3.png" width="400" height="400">
 ES6 -> Model-view-controller design-pattern (arrow functions)
+<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/4.png" width="400" height="400">
 
 ## async / await
 
@@ -148,7 +151,9 @@ Or maybe you’ve performed a REST API request and you want the data to fully lo
 3. Reduces “callback hell”
 
 ES5 -> Async and Await promises
+<img align="left" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/5.png" width="400" height="400">
 ES6 -> Async and Await promises (arrow functions)
+<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/6.png" width="400" height="400">
 
 ## Callback
 
@@ -160,4 +165,6 @@ callback hell
 have a recursive structure of callbacks (callbacks within callbacks within callbacks and so forth). This is not practical.
 
 ES5 -> JavaScript Callback
+<img align="left" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/7.png" width="400" height="400">
 ES6 -> JavaScript Callback (arrow functions)
+<img align="right" src="https://raw.githubusercontent.com/kambleaa007/Javascript/master/1.%20JavaScript%20Basics/pics/8.png" width="400" height="400">
