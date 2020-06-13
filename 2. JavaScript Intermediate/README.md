@@ -76,6 +76,16 @@ Every function has an execution context, which comprises of an environment that 
 
 So, it appears as if the function “remembers” this environment (or scope) because the function literally has a reference to the environment (and the variables defined in that environment)!
 
+### TL;DR
+
+Execution context is an abstract concept used by the ECMAScript specification to track the runtime evaluation of code. At any point in time, there can only be one execution context that is executing code.
+Every execution context has a Lexical Environment. This Lexical environments holds identifier bindings (i.e. variables and their associated values), and also has a reference to its outer environment.
+The set of identifiers that each environment has access to is called “scope.” We can nest these scopes into a hierarchical chain of environments, known as the “scope chain”.
+Every function has an execution context, which comprises of a Lexical Environment that gives meaning to the variables within that function and a reference to its parent’s environment. And so it appears as if the function “remembers” this environment (or scope) because the function literally has a reference to this environment. This is a closure.
+A closure is created every time an enclosing outer function is called. In other words, the inner function does not need to return for a closure to be created.
+The scope of a closure in JavaScript is lexical, meaning it’s defined statically by its location within the source code.
+Closures have many practical use cases. One important use case is to maintain a private reference to a variable in the outer scope.
+
 ## Emulating private methods with closures
 
 Each closure references a different version of the privateCounter variable through its own closure.
