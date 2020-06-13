@@ -70,6 +70,12 @@ makeCakeLater() -> when u want to bake -> ready after a sec.
 
 2. To create private variables
 
+### Summary
+
+Every function has an execution context, which comprises of an environment that gives meaning to the variables within that function and a reference to its parent’s environment. A reference to the parent’s environment makes all variables in the parent scope available for all inner functions, regardless of whether the inner function(s) are invoked outside or inside the scope in which they were created.
+
+So, it appears as if the function “remembers” this environment (or scope) because the function literally has a reference to the environment (and the variables defined in that environment)!
+
 ## Emulating private methods with closures
 
 Each closure references a different version of the privateCounter variable through its own closure.
