@@ -2,7 +2,7 @@
 
 [JavaScript] important concepts
 
-## [Just JavaScript] 01. Intermediate
+## [Just JavaScript] 02. Intermediate
 
 In JavaScript, a closure is a function to which the variables of the surrounding context are bound by reference.
 In JavaScript, closures are created every time a function is created, at function creation time.
