@@ -15,3 +15,7 @@
 ## [JavaScript] 03. [Advanced](https://github.com/kambleaa007/Javascript/tree/master/3.%20JavaScript%20Advanced)
 
     Topic: Add Here New Topics
+
+## [JavaScript QA] 03. [Question & Answers](https://github.com/kambleaa007/Javascript/tree/master/3.%20JavaScript%20Advanced)
+
+    Topic: Add Here New Topics
