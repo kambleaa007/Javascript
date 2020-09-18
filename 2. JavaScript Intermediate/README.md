@@ -128,6 +128,52 @@ Every function has an execution context, which comprises of an environment that 
 
 So, it appears as if the function “remembers” this environment (or scope) because the function literally has a reference to the environment (and the variables defined in that environment)!
 
+### Conclusion
+The way I will always remember closures is through the backpack analogy. When a function gets created and passed around or returned from another function, it carries a backpack with it. And in the backpack are all the variables that were in scope when the function was declared.
+
+When code is run in JavaScript, the environment in which it is executed is very important, and is evaluated as 1 of the following:
+Global code — The default environment where your code is executed for the first time.
+Function code — Whenever the flow of execution enters a function body.
+
+In other words, as we start the program, we start in the global execution context. Some variables are declared within the global execution context. We call these global variables. When the program calls a function, what happens? A few steps:
+JavaScript creates a new execution context, a local execution context
+That local execution context will have its own set of variables, these variables will be local to that execution context.
+The new execution context is thrown onto the execution stack. Think of the execution stack as a mechanism to keep track of where the program is in its execution
+When does the function end? When it encounters a return statement or it encounters a closing bracket }. When a function ends, the following happens:
+The local execution contexts pops off the execution stack
+The functions sends the return value back to the calling context. The calling context is the execution context that called this function, it could be the global execution context or another local execution context. It is up to the calling execution context to deal with the return value at that point. The returned value could be an object, an array, a function, a boolean, anything really. If the function has no return statement, undefined is returned.
+The local execution context is destroyed. This is important. Destroyed. All the variables that were declared within the local execution context are erased. They are no longer available. That’s why they’re called local variables.
+
+### in short --> 
+
+
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). 
+In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+If you ask me, i would say that closures enables us to create stateful functions.
+Step 1 ->
+Stateful functions
+Stateful functions are functions that can “remember” data from previous executions. For example lets create a function that “remembers” and count how many times it got executed, each time that we will invoke it, it will log the number of times it got executed
+Step 2 ->
+Execution context
+Every time we invoke a function, a new execution context is created, and each execution context has it’s own “Variable Environment” or “scope” if you will.
+When the function is “done”, e.g with a return statement or there are no more lines of code to execute, the engine will mark it to be garbage collected, meaning it’s entire environment will get disposed.
+Step 3 ->
+Global execution context
+When we start our program, the engine will create a global execution context for us, its not different from the execution context we create when we invoke a function. It also has a “Variable Environment” just like any other execution context, the difference is that the global execution context will never “die” (as long as our program is running of course), hence it’s variable environment won’t get disposed by the garbage collector.
+Step 4 ->
+Lexical Scope
+Lexical Scope is basically a fancy way of saying “Static Scope”, meaning we know at creation time what is the scope of our function.
+`WHERE you define your function, determines what variables the function have access to WHEN it gets called.`
+In other words, it doesn’t matter where and how you invoke the function, its all about where did it got declared.
+
+But how do we declare a function in one place, and invoke it in another place? Well, we can create a function within a function and return it:
+It turns out, that when we return a function, we are not only returning our function definition but we also return it’s entire lexical environment.
+
+This gives us the ability to create stateful functions with shared data across executions, it also allows us to create “private” variables that our global execution context doesn’t have access to.
+
+
+
 ### TL;DR
 
 Execution context is an abstract concept used by the ECMAScript specification to track the runtime evaluation of code. At any point in time, there can only be one execution context that is executing code.
