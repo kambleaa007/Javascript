@@ -193,6 +193,60 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 Another alternative could be to use forEach() to iterate over the array
 
+
+
+        var funcs = [];
+        // let's create 3 functions
+        for (var i = 0; i < 3; i++) {
+                // and store them in funcs
+                funcs[i] = function() {
+                // each should log its value.
+                console.log("My value: " + i);
+        };
+        }
+        for (var j = 0; j < 3; j++) {
+                // and now let's run each one to see
+                funcs[j]();
+        }
+
+OUTPUT:
+        It outputs this:
+
+        My value: 3
+        My value: 3
+        My value: 3
+
+        Whereas I'd like it to output:
+
+        My value: 0
+        My value: 1
+        My value: 2
+
+`Classic solution: Closures`
+What you want to do is bind the variable within each function to a separate, unchanging value outside of the function:
+Since there is no block scope in JavaScript - only function scope - by wrapping the function creation in a new function, you ensure that the value of "i" remains as you intended.
+
+
+        var funcs = [];
+
+        function createfunc(i) {
+                return function() {
+                console.log("My value: " + i);
+                };
+        }
+
+        for (var i = 0; i < 3; i++) {
+                funcs[i] = createfunc(i);
+        }
+
+        for (var j = 0; j < 3; j++) {
+                // and now let's run each one to see
+                funcs[j]();
+        }
+
+
+
+
 ## IIFE ES5 ES6
 
 IIFE was one of the most used patterns in the ES5, as functions were the only way to declare a scoped block of code.
@@ -214,6 +268,32 @@ or bind this to function being to props to child compo
 ### JavaScript Hoisting
 
 #### Hoisting -> Hoisting is JavaScript's default behavior of moving declarations to the top.
+
+While variables declared with var keyword are hoisted 
+(initialized with undefined before the code is run) 
+which means they are accessible in their enclosing scope even before they are declared:
+
+        function run() {
+        console.log(foo); // undefined
+        var foo = "Foo";
+        console.log(foo); // Foo
+        }
+
+        run();
+
+let variables are not initialized until their definition is evaluated. 
+Accessing them before the initialization results in a ReferenceError. 
+Variable said to be in "temporal dead zone" from the start of the block until the initialization is processed.
+
+        function checkHoisting() {
+        console.log(foo); // ReferenceError
+        let foo = "Foo";
+        console.log(foo); // Foo
+        }
+
+        checkHoisting();
+
+
 
 ### JavaScript Use Strict
 
