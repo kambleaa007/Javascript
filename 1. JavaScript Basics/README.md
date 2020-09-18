@@ -120,3 +120,16 @@ While const and let variables are scoped by code blocks, functions or modules, v
 Scopes can be nested. Inside an inner scope you can access the variables of an outer scope.
 
 The lexical scope consists of the outer function scopes determined statically. Any function, no matter the place where being executed, can access the variables of its lexical scope (this is the concept of closure).
+
+
+### Scoping rules
+
+Main difference is scoping rules. 
+Variables declared by var keyword are scoped to the immediate `function body` (hence the function scope) 
+while let variables are scoped to the immediate `enclosing block` denoted by { } {hence the block scope}.
+
+The reason why `let` keyword was introduced to the language was `function scope is confusing` and 
+was one of the main sources of bugs in JavaScript.
+
+
+
