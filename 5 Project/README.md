@@ -10,7 +10,7 @@ Domain -> KT
 Design ->                       
 UML (Unified Modeling Language) -> classes, interfaces, relations, is-a has-a, sequential flow, role managements, layers designing                      
 DFD (Data Flow Diagram) -> flow of data from UI --> App --> DB      (data as object format)                     
-E-R (Entity (whateever you see info store as Table) Relations [1...1/1...*/*...1/*...*] )                       
+E-R (Entity (whateever you see info store as Table) Relations [1...1/1... * / * ...1/ * ... * ] )                       
 Development ->                                  
 code, dependencies, env setup, modules integration, unit test, functional checking                      
 
