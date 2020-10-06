@@ -1,6 +1,6 @@
 # JustJavascript
 
-### javascript Algorithm and data Structures (https://github.com/zero-to-mastery/javascript-algorithms)
+### Javascript Algorithms and data Structures (https://github.com/zero-to-mastery/javascript-algorithms)
 
 ## [Just JavaScript] 03. Advanced
 
