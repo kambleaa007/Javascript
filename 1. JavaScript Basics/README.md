@@ -6,6 +6,13 @@
 
 JavaScript is a scripting language which is used for making your website dynamic.
 
+JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.                
+While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js                 
+
+### HTML
+HTML is not a programming language; it is a markup language that defines the structure of your content.                 
+HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way.         
+
 ### Values in JavaScript :
 
 Everything a computer’s memory hold is Data and representing Data in JavaScript is called Value. Values need to be distinguished based on their role. So, JS divides its value to 6 different type.

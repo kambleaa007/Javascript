@@ -18,3 +18,8 @@ when you see UI with inputs--> database table(inputs + 1 primary key id)
 
 
 
+### JWT
+
+client-server Authentication
+1) Stateful Authentication (memory @ server side, session based on each user logins)
+2) Stateless Authentication (token)
