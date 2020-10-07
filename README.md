@@ -20,6 +20,10 @@
 
     Topic: Add Here New Topics
 
-## [Project] 04. [Project](https://github.com/kambleaa007/Javascript/tree/master/5%20Project)
+## [Project] 05. [Project](https://github.com/kambleaa007/Javascript/tree/master/5%20Project)
 
     Topic: Domain Design Develoment
+
+## [Design Patterns] 06. [JS Design Patterns](https://github.com/kambleaa007/Javascript/tree/master/6%20Design%20Patterns)
+
+    Topic: Singleton, Builder, Adaptor
