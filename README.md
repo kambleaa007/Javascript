@@ -27,3 +27,7 @@
 ## [Design Patterns] 06. [JS Design Patterns](https://github.com/kambleaa007/Javascript/tree/master/6%20Design%20Patterns)
 
     Topic: Singleton, Builder, Adaptor
+
+## [Just AWS] 06. [Just AWS Fundamentals]()
+
+    Topic:
