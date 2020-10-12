@@ -28,6 +28,6 @@
 
     Topic: Singleton, Builder, Adaptor
 
-## [Just AWS] 06. [Just AWS Fundamentals]()
+## [Just AWS] 06. [Just AWS Fundamentals](https://github.com/kambleaa007/Javascript/tree/master/7%20AWS)
 
     Topic:
