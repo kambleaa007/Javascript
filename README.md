@@ -32,6 +32,6 @@
 
     Topic:
 
-## [Just DS and Performance] 06. [Data Structure and Performance](https://github.com/kambleaa007/Javascript/tree/master/7%20AWS)
+## [Just DS and Performance] 06. [Data Structure and Performance](https://github.com/kambleaa007/Javascript/tree/master/8%20DS%20%26%20Performance)
 
     Topic:    
