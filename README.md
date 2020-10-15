@@ -25,7 +25,7 @@
 
 ## [Just AWS] 06. [Just AWS Fundamentals](https://github.com/kambleaa007/Javascript/tree/master/6.%20AWS)
 
-    Topic:
+    Topic: Cloud Computing, VPC, EFS, EBS, Redis, S3, EC2, RDS, DynamoDB
 
 ## [Just DS and Performance] 07. [Data Structure and Performance](https://github.com/kambleaa007/Javascript/tree/master/7.%20DS%20%26%20Performance)
 
