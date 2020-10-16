@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+# [JustJavascript](https://justjavascript.com/)
 
-You can use the [editor on GitHub](https://github.com/kambleaa007/Javascript/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+:point_right: Learn JavaScript Step-by-Step
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## [JavaScript] 01. [Basics](https://github.com/kambleaa007/Javascript/tree/master/1.%20JavaScript%20Basics)
 
-### Markdown
+    Topic: Scope, Values
+    Add Here New Topics
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## [JavaScript] 02. [Advanced](https://github.com/kambleaa007/Javascript/tree/master/2.%20JavaScript%20Advanced)
 
-```markdown
-Syntax highlighted code block
+    Topic: Lexical Scope, Closure, IIFE, JSON, Promise, DOM events, Type Coercion, Advanced Loops, Advanced Objects, modules.
 
-# Header 1
-## Header 2
-### Header 3
+## [JavaScript QA] 03. [Question & Answers](https://github.com/kambleaa007/Javascript/tree/master/3.%20JavaScript%20QA)
 
-- Bulleted
-- List
+    Topic: Add Here New Topics
 
-1. Numbered
-2. List
+## [Project] 04. [Project](https://github.com/kambleaa007/Javascript/tree/master/4.%20Project)
 
-**Bold** and _Italic_ and `Code` text
+    Topic: Domain Design Develoment
 
-[Link](url) and ![Image](src)
-```
+## [Design Patterns] 05. [JS Design Patterns](https://github.com/kambleaa007/Javascript/tree/master/5.%20Design%20Patterns)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    Topic: Singleton, Builder, Adaptor, Factory, Prototype, Bridge, Composite, Decorator, Facade
 
-### Jekyll Themes
+## [Just AWS] 06. [Just AWS Fundamentals](https://github.com/kambleaa007/Javascript/tree/master/6.%20AWS)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kambleaa007/Javascript/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    Topic: Cloud Computing, VPC, EFS, EBS, Redis, S3, EC2, RDS, DynamoDB
 
-### Support or Contact
+## [Just DS and Performance] 07. [Data Structure and Performance](https://github.com/kambleaa007/Javascript/tree/master/7.%20DS%20%26%20Performance)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    Topic: Asymptotic Analysis, Big O Notation   
