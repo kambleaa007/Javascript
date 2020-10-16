@@ -32,13 +32,13 @@ Design Patterns are divided into 3 categories:
 
 ### Creational Patterns
   Abstract Factory	Creates an instance of several families of classes      
-  Builder	Separates object construction from its representation           
-  Factory Method	Creates an instance of several derived classes      
+  [Builder	Separates object construction from its representation](https://github.com/kambleaa007/Javascript/tree/master/5.%20Design%20Patterns/Builder)           
+  [Factory Method	Creates an instance of several derived classes](https://github.com/kambleaa007/Javascript/tree/master/5.%20Design%20Patterns/Factory)                   
   Prototype	A fully initialized instance to be copied or cloned     
-  Singleton	A class of which only a single instance can exist       
+  [Singleton	A class of which only a single instance can exist](https://github.com/kambleaa007/Javascript/tree/master/5.%20Design%20Patterns/Singleton)                   
 
 ### Structural Patterns         
-  Adapter	Match interfaces of different classes                       
+  [Adapter  Match interfaces of different classes](https://github.com/kambleaa007/Javascript/tree/master/5.%20Design%20Patterns/Adapter)                       
   Bridge	Separates an object’s interface from its implementation         
   Composite	A tree structure of simple and composite objects        
   Decorator	Add responsibilities to objects dynamically         

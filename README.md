@@ -21,7 +21,7 @@
 
 ## [Design Patterns] 05. [JS Design Patterns](https://github.com/kambleaa007/Javascript/tree/master/5.%20Design%20Patterns)
 
-    Topic: Singleton, Builder, Adaptor
+    Topic: Singleton, Builder, Adaptor, Factory, Prototype, Bridge, Composite, Decorator, Facade
 
 ## [Just AWS] 06. [Just AWS Fundamentals](https://github.com/kambleaa007/Javascript/tree/master/6.%20AWS)
 
