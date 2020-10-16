@@ -61,11 +61,12 @@ finally --> = O(n^2)
 
 ### Summary of Sorting
 
-                Best        Average     Worst           
-Selection  --   O(n2)       O(n2)       O(n2)       
-Insertion  --   O(n)        O(n2)       O(n2)       
-Merge      --   O(nlog(n))  O(nlog(n))  O(nlog(n))          
-Quick      --   O(nlog(n))  O(nlog(n))  O(n2)           
+| Algorithm | Best       | Average    | Worst      |
+|-----------|------------|------------|------------|
+| Selection | O(n2)      | O(n2)      | O(n2)      |
+| Insertion | O(n)       | O(n2)      | O(n2)      |
+| Merge     | O(nlog(n)) | O(nlog(n)) | O(nlog(n)) |
+| Quick     | O(nlog(n)) | O(nlog(n)) | O(n2)      |        
 
 
 O(1) < O(log n) < O (n) < O(n log n) < O(n^2) < O (n^3)< O(2^n) < O(n!)
