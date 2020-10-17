@@ -27,7 +27,7 @@
     Topic: Singleton, Builder, Adaptor, Factory, Prototype, Bridge, Composite, Decorator, Facade
 - [ ] Add Here New Topics
 
-## [Just AWS] 06. [Just AWS Azure Fundamentals](https://github.com/kambleaa007/Javascript/tree/master/6.%20AWS%20Azure)
+## [Cloud Computing] 06. [AWS Azure Fundamentals](https://github.com/kambleaa007/Javascript/tree/master/6.%20AWS%20Azure)
 
     Topic: Cloud Computing, VPC, EFS, EBS, Redis, S3, EC2, RDS, DynamoDB                        
 - [ ] Add Here New Topics
