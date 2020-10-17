@@ -7,40 +7,40 @@
 ### Our Motivation for Asymptotic Analysis
 You need stopwatch -> problem with stopwatch time -> diff machines, diff compilers, diff libs -> diff time -> doesnt give up clear picture !!!
 
-what we can control?
-1) Count Operations instead of Time -> Abstact way
-2) Focus on how Performance scales -> if input gets bigger how algo will handle it
-3) Go beyond input size -> how algo handle diff situations
+what we can control?                                    
+1) Count Operations instead of Time -> Abstact way                  
+2) Focus on how Performance scales -> if input gets bigger how algo will handle it                          
+3) Go beyond input size -> how algo handle diff situations                  
 
 ### Counting Operations
 
-How many operations get executed?
-eg. what count as operation? Basic unit doesnt change as ip changes
-str.length()
-i++
-str.charAt(int)
-initialisation loop var i
-return
+How many operations get executed?           
+eg. what count as operation? Basic unit doesnt change as ip changes             
+str.length()                
+i++                         
+str.charAt(int)                             
+initialisation loop var i                       
+return                  
 
 ### Introduction to Asymptotic Analysis
 
-Motivation -> if ip twice as big, how many more ops do we need?
+> Motivation -> if ip twice as big, how many more ops do we need?                 
 
-size of input -> N
+size of input -> N              
 
-str.charAt(i) --> constant time (nothing to do with size of str)
-for (i=0; i< str.length(); i++)  --> str.length() --> linear time
+str.charAt(i) --> constant time (nothing to do with size of str)            
+for (i=0; i< str.length(); i++)  --> str.length() --> linear time           
 
-f(n) = O( g(n) ) means, both f(n), g(n) grow in same way as ip grows
+f(n) = O( g(n) ) means, both f(n), g(n) grow in same way as ip grows                
 
-Big O -> rate of growth of two functions
-Big O notation -> specifically describes worst case scenario
+Big O -> rate of growth of two functions                
+Big O notation -> specifically describes worst case scenario                
 
-Drop constant --> 1000000 = O(1)
-Keep only dominant term --> Fastest growing term --> 
-3n+3 = O(3n) = O(n)
-g(n)=100+n^2+2^n --> g(n)= O(2^n)
-f(n)= 4 log(n) + 3nlog(n) + n --> f(n) = nlog(n)
+Drop constant --> 1000000 = O(1)            
+Keep only dominant term --> Fastest growing term -->            
+3n+3 = O(3n) = O(n)         
+g(n)=100+n^2+2^n --> g(n)= O(2^n)               
+f(n)= 4 log(n) + 3nlog(n) + n --> f(n) = nlog(n)            
 
 Formally,
 f(n) = O(g(n)) means, 
