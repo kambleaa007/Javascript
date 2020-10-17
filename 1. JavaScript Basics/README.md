@@ -13,6 +13,19 @@ While it is most well-known as the scripting language for Web pages, many non-br
 HTML is not a programming language; it is a markup language that defines the structure of your content.                 
 HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way.         
 
+### JS & TS 
+Are you planning to learn #TypeScript or #JavaScript then in the first place you should know what a dynamically typed language is, and what a statically typed language is.
+
+Dynamically typed language: #JavaScript #Python #PHP                    
+
+A language is dynamically typed if the type is associated with run-time values, and not named variables. Means you can write a little quicker coz' you don't have to specify types every time                   
+
+Statically typed language: #Java #Rust #Go                      
+
+A language is statically typed if the type of a variable is known at compile time. It means that you as the programmer must specify what type each variable.                            
+
+
+
 ### Values in JavaScript :
 
 Everything a computer’s memory hold is Data and representing Data in JavaScript is called Value. Values need to be distinguished based on their role. So, JS divides its value to 6 different type.

@@ -4,7 +4,7 @@
 
 ## [JavaScript] 01. [Basics](https://github.com/kambleaa007/Javascript/tree/master/1.%20JavaScript%20Basics)
 
-    Topic: Scope, Values
+    Topic: Scope, Values, JS vs TS
     Add Here New Topics
 
 ## [JavaScript] 02. [Advanced](https://github.com/kambleaa007/Javascript/tree/master/2.%20JavaScript%20Advanced)
