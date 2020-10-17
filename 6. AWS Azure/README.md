@@ -1,4 +1,4 @@
-# AWS
+# AWS Azure
 
 [AWS] Important Notes
 
