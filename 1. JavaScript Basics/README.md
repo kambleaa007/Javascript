@@ -4,6 +4,8 @@
 
 ## [Just JavaScript] 01. Basics
 
+As you dive deeper into #JavaScript, you'll look back at the code you had written in the beginning and you will realize that there’s always a better way to write it.
+
 JavaScript is a scripting language which is used for making your website dynamic.
 
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.                

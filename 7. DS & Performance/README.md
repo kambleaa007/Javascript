@@ -46,18 +46,22 @@ Formally,
 f(n) = O(g(n)) means, 
 constants N,c so for each n>N, f(n) <= C g(n)
 
+```
 for(){} // O(n)
 for(){} // O(n)
 if(){}  // O(1)
 finally --> O(n)
+```
 
 Nested loops
+```
 for(){ // O(n)
     for(){ // O(n)
         if(){}// O(1)
     }
 }
 finally --> = O(n^2)
+```
 
 ### Summary of Sorting
 
@@ -69,7 +73,7 @@ finally --> = O(n^2)
 | Quick     | O(nlog(n)) | O(nlog(n)) | O(n2)      |        
 
 
-O(1) < O(log n) < O (n) < O(n log n) < O(n^2) < O (n^3)< O(2^n) < O(n!)
+`O(1) < O(log n) < O (n) < O(n log n) < O(n^2) < O (n^3)< O(2^n) < O(n!)`
 
 
 
