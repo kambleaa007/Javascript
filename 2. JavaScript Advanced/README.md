@@ -1,7 +1,5 @@
 # JustJavascript
 
-### Javascript Algorithms and data Structures (https://github.com/zero-to-mastery/javascript-algorithms)
-
 ## [Just CSS]
 
 - star \* ->> all elements
@@ -10,11 +8,11 @@
 
 - div, p ->> all divs and paragraphs
 
-- div > p ->> all p tags, one level deep in div
+- div > p ->> all p tags, one level deep in div (Child Combinator / Direct Descendant selector, will NOT apply to grand children)
 
-- div + p ->> p tags immediately after div
+- div + p ->> p tags immediately after div (Adjacent Sibling selector, selects only the immediate sibling)
 
-- div ~ p ->> p tags preceded with class
+- div ~ p ->> p tags preceded with class (General Sibling selector, share the same parent and are on the same level)
 
 - .classname ->> all elements with class
 
@@ -28,6 +26,8 @@
 
 Need to Add some more topics
 [@Check more topics here:](https://github.com/zero-to-mastery)
+
+### Javascript Algorithms and data Structures (https://github.com/zero-to-mastery/javascript-algorithms)
 
 # JustJavascript
 
