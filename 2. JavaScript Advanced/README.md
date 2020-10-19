@@ -2,13 +2,43 @@
 
 ### Javascript Algorithms and data Structures (https://github.com/zero-to-mastery/javascript-algorithms)
 
-## [Just JavaScript] 03. Advanced
+## [Just CSS]
 
+- star \*
+  all elements
 
+- div
+  all divs tags
+
+- div, p
+  all divs and paragraphs
+
+- div > p
+  all p tags, one level deep in div
+
+- div + p
+  p tags immediately after div
+
+- div ~ p
+  p tags preceded with class
+
+- classname
+  all elements with class
+
+- \# idname
+  element wit ID
+
+- div.classname
+  divs with certain class name
+
+- div#idname
+  div with certain ID
+
+- \# idname \*
+  all elements inside idname
 
 Need to Add some more topics
 [@Check more topics here:](https://github.com/zero-to-mastery)
-
 
 # JustJavascript
 
@@ -141,6 +171,7 @@ Every function has an execution context, which comprises of an environment that 
 So, it appears as if the function “remembers” this environment (or scope) because the function literally has a reference to the environment (and the variables defined in that environment)!
 
 ### Conclusion
+
 The way I will always remember closures is through the backpack analogy. When a function gets created and passed around or returned from another function, it carries a backpack with it. And in the backpack are all the variables that were in scope when the function was declared.
 
 When code is run in JavaScript, the environment in which it is executed is very important, and is evaluated as 1 of the following:
@@ -156,10 +187,9 @@ The local execution contexts pops off the execution stack
 The functions sends the return value back to the calling context. The calling context is the execution context that called this function, it could be the global execution context or another local execution context. It is up to the calling execution context to deal with the return value at that point. The returned value could be an object, an array, a function, a boolean, anything really. If the function has no return statement, undefined is returned.
 The local execution context is destroyed. This is important. Destroyed. All the variables that were declared within the local execution context are erased. They are no longer available. That’s why they’re called local variables.
 
-### in short --> 
+### in short -->
 
-
-A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). 
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
 In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
 
 If you ask me, i would say that closures enables us to create stateful functions.
@@ -183,8 +213,6 @@ But how do we declare a function in one place, and invoke it in another place? W
 It turns out, that when we return a function, we are not only returning our function definition but we also return it’s entire lexical environment.
 
 This gives us the ability to create stateful functions with shared data across executions, it also allows us to create “private” variables that our global execution context doesn’t have access to.
-
-
 
 ### TL;DR
 
@@ -251,8 +279,6 @@ let allows you to declare variables that are limited in scope to the block, stat
 
 Another alternative could be to use forEach() to iterate over the array
 
-
-
         var funcs = [];
         // let's create 3 functions
         for (var i = 0; i < 3; i++) {
@@ -268,7 +294,7 @@ Another alternative could be to use forEach() to iterate over the array
         }
 
 OUTPUT:
-        It outputs this:
+It outputs this:
 
         My value: 3
         My value: 3
@@ -283,7 +309,6 @@ OUTPUT:
 `Classic solution: Closures`
 What you want to do is bind the variable within each function to a separate, unchanging value outside of the function:
 Since there is no block scope in JavaScript - only function scope - by wrapping the function creation in a new function, you ensure that the value of "i" remains as you intended.
-
 
         var funcs = [];
 
@@ -301,9 +326,6 @@ Since there is no block scope in JavaScript - only function scope - by wrapping 
                 // and now let's run each one to see
                 funcs[j]();
         }
-
-
-
 
 ## IIFE ES5 ES6
 
@@ -327,8 +349,8 @@ or bind this to function being to props to child compo
 
 #### Hoisting -> Hoisting is JavaScript's default behavior of moving declarations to the top.
 
-While variables declared with var keyword are hoisted 
-(initialized with undefined before the code is run) 
+While variables declared with var keyword are hoisted
+(initialized with undefined before the code is run)
 which means they are accessible in their enclosing scope even before they are declared:
 
         function run() {
@@ -339,8 +361,8 @@ which means they are accessible in their enclosing scope even before they are de
 
         run();
 
-let variables are not initialized until their definition is evaluated. 
-Accessing them before the initialization results in a ReferenceError. 
+let variables are not initialized until their definition is evaluated.
+Accessing them before the initialization results in a ReferenceError.
 Variable said to be in "temporal dead zone" from the start of the block until the initialization is processed.
 
         function checkHoisting() {
@@ -350,8 +372,6 @@ Variable said to be in "temporal dead zone" from the start of the block until th
         }
 
         checkHoisting();
-
-
 
 ### JavaScript Use Strict
 
