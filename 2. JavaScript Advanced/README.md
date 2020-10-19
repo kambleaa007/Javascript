@@ -4,38 +4,27 @@
 
 ## [Just CSS]
 
-- star \*
-  all elements
+- star \* ->> all elements
 
-- div
-  all divs tags
+- div ->> all divs tags
 
-- div, p
-  all divs and paragraphs
+- div, p ->> all divs and paragraphs
 
-- div > p
-  all p tags, one level deep in div
+- div > p ->> all p tags, one level deep in div
 
-- div + p
-  p tags immediately after div
+- div + p ->> p tags immediately after div
 
-- div ~ p
-  p tags preceded with class
+- div ~ p ->> p tags preceded with class
 
-- classname
-  all elements with class
+- .classname ->> all elements with class
 
-- \# idname
-  element wit ID
+- \# idname ->> element wit ID
 
-- div.classname
-  divs with certain class name
+- div.classname ->> divs with certain class name
 
-- div#idname
-  div with certain ID
+- div#idname ->> div with certain ID
 
-- \# idname \*
-  all elements inside idname
+- \# idname \* ->> all elements inside idname
 
 Need to Add some more topics
 [@Check more topics here:](https://github.com/zero-to-mastery)
