@@ -1,29 +1,5 @@
 # JustJavascript
 
-## [Just CSS]
-
-- star \* ->> all elements
-
-- div ->> all divs tags
-
-- div, p ->> all divs and paragraphs
-
-- div > p ->> all p tags, one level deep in div (Child Combinator / Direct Descendant selector, will NOT apply to grand children)
-
-- div + p ->> p tags immediately after div (Adjacent Sibling selector, selects only the immediate sibling)
-
-- div ~ p ->> p tags preceded with class (General Sibling selector, share the same parent and are on the same level)
-
-- .classname ->> all elements with class
-
-- \# idname ->> element wit ID
-
-- div.classname ->> divs with certain class name
-
-- div#idname ->> div with certain ID
-
-- \# idname \* ->> all elements inside idname
-
 Need to Add some more topics
 [@Check more topics here:](https://github.com/zero-to-mastery)
 
