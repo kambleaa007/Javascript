@@ -1,6 +1,6 @@
 # Docker Kubernetes
 
-[AWS] Important Notes
+[Docker] Important Notes
 
 ## [Just Docker] 07. Docker Fundamentals
 
@@ -113,6 +113,11 @@ Kill all containers that are currently running.
 
 -docker rm [container]
 Delete a particular container that is not currently running.
+
+
+[kubernetes] Important Notes
+
+## kubernetes
 
 ## Docker important commands Cheatsheet.
 ![Docker Cheatsheet](https://raw.githubusercontent.com/kambleaa007/Javascript/master/8.%20Docker/pics/CheatSheet.png)
