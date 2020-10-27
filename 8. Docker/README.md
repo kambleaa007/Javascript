@@ -21,6 +21,9 @@ A virtual machine includes a complete operating system. It will work independent
 
 A Docker will only share the resources of the host machine to run its environments.
 
+![Docker](https://raw.githubusercontent.com/kambleaa007/Javascript/master/7.%20Docker/pics/1.png)
+
+
 ### Why use Docker?
 
 - Docker is fast.
@@ -112,3 +115,5 @@ Kill all containers that are currently running.
 Delete a particular container that is not currently running.
 
 ## Docker important commands Cheatsheet.
+![Docker Cheatsheet](https://raw.githubusercontent.com/kambleaa007/Javascript/master/7.%20Docker/pics/CheatSheet.png)
+
