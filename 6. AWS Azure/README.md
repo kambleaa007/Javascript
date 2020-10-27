@@ -2,7 +2,7 @@
 
 [AWS] Important Notes
 
-## [Just AWS] 07. AWS Azure Fundamentals
+## [Just AWS] 06. AWS Azure Fundamentals
 
 ### AWS
 
