@@ -23,6 +23,27 @@ client-server Authentication
 1. Stateful Authentication (memory @ server side, session based on each user logins)
 2. Stateless Authentication (token)
 
+
+### React
+React is component driven. Everything is a component which is responsible for some functionality. You write small, small components and then combine them together to form big components.
+
+### Hooks
+Custom hook is a function that starts with the word 'use' and may call other hooks. 'useAnything' naming convention is, mainly to allow the linter to find bugs in the use of hooks.
+
+the useCallback hook is used to prevent unnecessary rendering of a children component.
+
+The hook, useMemo is also used to show how React helps us prevent unnecessary calculations inside a component.
+
+Props specifically refer to what is passed into a component.  This usually is state, but it doesn't belong to the component.
+
+Local State does belong to a component, it can share it with children via props and context but it can't pass it to it's parent
+Some libraries like Redux hoist state out of components and aren't tied specifically to any component.
+
+They usually give you a way to "connect" that state to a component
+What is functional components? 
+
+Stateless functional components are pure functions that do not have state or lifecycle methods. They take in props and return HTML.
+
 ### Testing
 
 Mock

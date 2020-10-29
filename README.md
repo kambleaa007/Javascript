@@ -5,6 +5,7 @@
 ## [JavaScript] 01. [Basics](https://github.com/kambleaa007/Javascript/tree/master/1.%20JavaScript%20Basics)
 
     Topic: Scope, Values, JS vs TS
+    Enough JavaScript to learn React --> Classes, Arrow Functions, Template Literals, Map, Filter, Reduce, Conditionals, Import/Export, Libraries, Async/Await, Higher-Order Functions
 
 - [ ] Add Here New Topics
 

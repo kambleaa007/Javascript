@@ -217,3 +217,6 @@ div bottom right
 ```
 
 z-index: -1; -> has a z-index of -1, it will be placed behind
+
+### CSS inspector
+![CSS inspector]()
