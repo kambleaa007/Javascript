@@ -9,7 +9,7 @@
 
 - [ ] Add Here New Topics
 
-## [CSS] 01. [Basics](https://github.com/kambleaa007/Javascript/tree/master/1.%20CSS%20Basics)
+## [CSS] 01. [Basics](https://github.com/kambleaa007/Javascript/tree/master/CSS%20Basics)
 
     Topic:
 
