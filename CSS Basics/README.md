@@ -218,5 +218,24 @@ div bottom right
 
 z-index: -1; -> has a z-index of -1, it will be placed behind
 
+### Table
+
+```
+<table id="tbl">
+  <tr><th>4:00</th><th>11:00</th><th>6:00</th></tr>        
+  <tr><td>Average</td><td>Average</td><td>Average</td></tr>
+  <tr><td>Bed Time</td><td>Wake up time</td><td>Time Slept</td></tr>        
+</table>
+
+#tbl{
+  text-align:center;
+  border: solid 2px;
+  border-radius: 20%;
+  padding:2%;
+  top:2%;
+}
+```
+
+
 ### CSS inspector
 ![CSS inspector](https://raw.githubusercontent.com/kambleaa007/Javascript/master/CSS%20Basics/pics/CSS%20inspector.jpg)
