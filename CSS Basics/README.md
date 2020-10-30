@@ -235,7 +235,41 @@ z-index: -1; -> has a z-index of -1, it will be placed behind
   top:2%;
 }
 ```
+Table Output
+![Table Output]()
 
+### CSS Flexbox
+The flex layout allows responsive elements within a container to be automatically arranged depending upon screen size
+
+Block, for sections in a webpage
+Inline, for text
+Table, for two-dimensional table data
+Positioned, for explicit position of an element
+
+The nowrap value specifies that the flex items will not wrap (this is default):
+
+```
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+
+.flex-container {
+  display: flex;           // using flex layout
+  flex-wrap: nowrap;       // you can change window size
+  background-color: Blue;
+  width:1000px;            // parent got 1000px of width -> 10 X 100px can fit
+}  
+
+.flex-container >  div  {
+  width: 100px;
+  margin: 5px;             // Outtest outside of border
+  padding: 2px;            // Innest  inside  of border 
+  text-align: center;
+  border-left: 5px solid red; // looks like separator
+}
+```
 
 ### CSS inspector
 ![CSS inspector](https://raw.githubusercontent.com/kambleaa007/Javascript/master/CSS%20Basics/pics/CSS%20inspector.jpg)
