@@ -2,7 +2,7 @@
 
 [Docker] Important Notes
 
-## [Just Docker] 07. Docker Fundamentals
+## [Just Docker] 08. Docker Fundamentals
 
 ### Docker
 A Beginner’s Guide To Docker
