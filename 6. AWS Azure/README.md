@@ -165,8 +165,41 @@ The Classic Load Balancer provides basic load balancing across multiple Amazon E
 Amazon EC2 Auto Scaling helps you maintain application availability, and it allows you to dynamically scale your Amazon EC2 capacity up or down automatically according to conditions that you define. You can use Amazon EC2 Auto Scaling for fleet management of Amazon EC2 instances, which can help maintain the health and availability of your fleet, and ensure that you are running your desired number of Amazon EC2 instances. You can also use Amazon EC2 Auto Scaling to dynamically scale Amazon EC2 instances. Dynamic scaling automatically increases the number of Amazon EC2 instances during demand spikes to maintain performance and decrease capacity during lulls, which can help reduce costs. Amazon EC2 Auto Scaling is well-suited to applications that have stable demand patterns, or applications that experience hourly, daily, or weekly variability in usage.
 
 
+## Release Phases
 
+- pipeline.yml 
+    - parameters:
+        - GithubRepo:
+        - GithubToken:
+        - GithubUser:
+    - BuildArtifactBucket: (S3 bucket for build artifact, project)    
+    - CodeBuildProject:
+    - Pipeline:
+        - Properties:
+            - Stages:
+                - Name: Source
+                - Name: Build
+                - Name: Stage
+                - Name: Prod
+                    - Actions:
 
+### Source - review (from github)
+### Build - compile unit test, create container img
+### Test - integration test UI test security tests
+### Production - deployment err free
 
+## Amplify
+> cd Project 
+> amplify console
+Log in aws account
+Frontend Environment and Backend Environment  
+Go to Frontend Environment -> GitHub -> Select Repo -> Select Branch -> Next
+Create Environment (name it Prod you can see same generated in Backend Environment) -> yml script -> Next
+
+Provision | Build | Test | Deploy | Verify
+
+You can different `Create Environment` for branches like `QA Dev Prod Master`
+
+## AWS CodePipeline - CD, test build deploy with every code chg
 
 
