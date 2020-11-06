@@ -35,9 +35,47 @@ Everything a computer’s memory hold is Data and representing Data in JavaScrip
         Number -> NaN, Infinity, -Infinity are also of Number type
         String
         Boolean
-        Undefined -> denotes the absence of a meaningful value (typeof(null) is object but typeof(undefined) is undefined)
+        Undefined -> denotes the absence of a meaningful value (typeof(null) is object but typeof(undefined) is undefined) 
         Function -> Functions are the only thing that produces a scope
         Object -> value that allow us to group different types of value (object also, functions also)
+
+#### Tips
+````
+
+Undefined == null   // True
+Undefined === null  // False (Data Types are different)
+null = 'value'      // ReferenceError
+undefined = 'value' // 'value'
+typeof null         // object   
+typeof undefined    // undefined
+typeof Object       // function
+typeof Boolean      // function
+
+
+undefined means a variable has been declared but has not yet been assigned a value 
+var TestVar;
+alert(TestVar);        // shows undefined
+alert(typeof TestVar); // shows undefined
+
+null is an assignment value. It can be assigned to a variable as a representation of no value
+var TestVar = null;
+alert(TestVar);        // shows null
+alert(typeof TestVar); // shows object
+
+JSON.stringify() --> keeps null but omits undefined
+const json = JSON.stringify({ undefinedValue: undefined, nullValue: null });
+console.log(json); // prints {"nullValue":null}
+
+
+````
+
+== vs ===
+Double equals (==) is abstract equality comparison operator (True for same value with diffrent data types) 
+"4" == 4   // True
+Triple equals (===) are strict equality comparison operator, which returns false for different types and different content.
+"4" === 4  // False
+
+
 
 ### Scope
 
@@ -154,4 +192,17 @@ The reason why `let` keyword was introduced to the language was `function scope 
 was one of the main sources of bugs in JavaScript.
 
 
+### Object destructuring
+
+````
+const user = {
+    id: 42,
+    is_verified: true
+};
+
+const {id, is_verified} = user;
+
+console.log(id); // 42
+console.log(is_verified); // true 
+````
 

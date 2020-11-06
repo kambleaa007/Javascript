@@ -138,9 +138,9 @@ There are four guidelines principle of Uniform Interface are:
 
 #### Rules of REST API: There are certain rules which should be kept in mind while creating REST API    
 
-- REST is based on the resource or noun instead of action or verb based. It means that a URI of a REST API should always end with a noun. Example: /api/users is a good example, but /api?type=users is a bad example of creating a REST API.
-- HTTP verbs are used to identify the action. Some of the HTTP verbs are – GET, PUT, POST, DELETE, UPDATE, PATCH.
-- A web application should be organized into resources like users and then uses HTTP verbs like – GET, PUT, POST, DELETE to modify those resources. And as a developer it should be clear that what needs to be done just by looking at the endpoint and HTTP method used.
+- REST is based on the resource or noun instead of action or verb based. It means that a URI of a REST API should always end with a noun. `Example: /api/users` is a good example, but `/api?type=users is a bad example` of creating a REST API.
+- HTTP verbs are used to identify the action. Some of the `HTTP verbs are – GET, PUT, POST, DELETE, UPDATE, PATCH.`
+- A web application should be organized into resources like users and then uses `HTTP verbs like – GET, PUT, POST, DELETE` to modify those resources. And as a developer it should be clear that what needs to be done just by looking at the endpoint and HTTP method used.
 - Always use plurals in URL to keep an API URI consistent throughout the application.
 - Send a proper HTTP code to indicate a success or error status.
 
