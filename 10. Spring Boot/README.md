@@ -6,173 +6,182 @@
 
 ### Spring Boot 5
 
-Reactive 
-Serverless
+Reactive    
+Serverless      
 
 ### Microservices
 
-Monolith drawback 
-modify quickly releases multiple times
-expectation clents changed
-freq chgs faster releses
-scaling with more users more inst of app
+Monolith drawback                    
+modify quickly releases multiple times          
+expectation clents changed          
+freq chgs faster releses                
+scaling with more users more inst of app            
 
 
-Heroku 1st by Adam
+Heroku 1st by Adam          
+
 ### 12 factor principle
-spring boot -> microserv
+
+spring boot -> microserv                    
 adrian cockroft at netflix -> fince grained SOA
 
-install puttyGen
+install puttyGen            
 
-pom
-parent starter
-child starter
+pom     
+parent starter          
+child starter       
 
-embedded tomcat server provided by dependency
-plugin ->fat jar-> deployable artifact-> bigger size->controller->spring rest->annotation
+embedded tomcat server provided by dependency               
+plugin ->fat jar-> deployable artifact-> bigger size->controller->spring rest->annotation           
 
 
-spring boot -> autoconfig
-app.prop
-key value data
+spring boot -> autoconfig           
+app.prop        
+key value data          
 
-debug=true
+debug=true      
 
 ### AutoConfiguration
-auto config app by jar dependencies added_. look at jar class path-> auto config
 
-Importing additional configuration classes   
-@Import or @ComponentScan
+auto config app by jar dependencies added_. look at jar class path-> auto config            
 
-Importing XML configuration   
-@ImportResource to load XML config files 
+Importing additional configuration classes              
+@Import or @ComponentScan           
 
-
-// Primary configuration/runner class
-@SpringBootApplication->combines three
-
-SpringApplication is Class
--> run method
--> pass classname, cmd args[]
-
-@SpringBootConfiguration
-@EnableAutoConfiguration
-@ComponentScan
+Importing XML configuration                 
+@ImportResource to load XML config files            
 
 
-@EnableAutoConfiguration->combine
-@Configuration
-this is spring core, imp config class
-xml replacement beans
-manually in web.xml
--> started DispactureServlet
+// Primary configuration/runner class           
+@SpringBootApplication->combines three          
 
-spring-boot-starter ->dependency
+SpringApplication is Class      
+-> run method       
+-> pass classname, cmd args[]           
+
+@SpringBootConfiguration        
+@EnableAutoConfiguration        
+@ComponentScan      
+
+
+@EnableAutoConfiguration->combine           
+@Configuration                          
+this is spring core, imp config class           
+xml replacement beans       
+manually in web.xml 
+-> started DispactureServlet        
+
+spring-boot-starter ->dependency            
 
 ### How Run
 
-1)
-run as java app
+1) run as java app      
 run as spring app
 
-2)
-package -> jar -> run jar
+2)package -> jar -> run jar         
 java -jar `SNAPSHOT.jar`
 
-maven
-maven build...
-goal -> package
+maven               
+maven build...              
+goal -> package     
 
-building jar-> target folder-> Fat JAR
-project + embed server + libs
+building jar-> target folder-> Fat JAR          
+project + embed server + libs           
 
-.jar.original -> lightweight
+.jar.original -> lightweight                
 
-got .jar
-run on cmd> java -jar `name of .jar`
+got .jar            
+run on cmd> java -jar `name of .jar`            
 
-
-
-3)
-mvn spring-boot:run
+3) mvn spring-boot:run
 
 ### Tom cat initialised on port???
 
-only when
-spring-boot-starter-web
-not for plain java
-spring-boot-starter
+only when               
+spring-boot-starter-web     
+not for plain java      
+spring-boot-starter     
 
-web project run on web servers
+web project run on web servers          
 
 serverless containerless app
 
-Web Server-> Tomcat Server-> Container Deployment -> have ->App
+Web Server-> Tomcat Server-> Container Deployment -> have ->App         
 
-App deployment
+App deployment          
 
-I want jetty server?
+### I want jetty server?
 
 <exclusion>
     spring-boot-starter-tomcat
 </exclusion>
-spring-boot-starter-jetty
+
+spring-boot-starter-jetty           
 
 ### Root URL 
-server.servlet.context-path=/myapp
+
+server.servlet.context-path=/myapp      
 
 ### Spring 
 
-Spring MVC-> has Spring REST (no views)
+Spring MVC-> has Spring REST (no views)         
 
-better use-> Spring Data JPA
+better use-> Spring Data JPA            
 
-complex are->
-Spring JDBC
-Spring JPA
+complex are->           
+Spring JDBC     
+Spring JPA      
 
-minimum config and faster
+minimum config and faster           
 
-spring-boot-starter-data-jpa
+spring-boot-starter-data-jpa            
 
-mysql
-mysql-connector-java
+mysql               
+mysql-connector-java            
 
+### Entity vs Bean
 
-Entity --> Represents Table
-NEVER USE OR RETURN TABLE ALWAYS
-NEVER EXPOSE DIRECTLY
+Entity --> Represents Table             
+NEVER USE OR RETURN TABLE ALWAYS        
+NEVER EXPOSE DIRECTLY       
 
-Create Bean --> POJO
-NO annotation like @Id
+Create Bean --> POJO            
+NO annotation like @Id          
 
-DAO --> works on Entity
-interface StudentDAO extends crudRepo<StudentEntity, INTERGER>
-
-
-controller 
-Use Bean here
-return--> ResponseEntity<Bean> --> body, status
+DAO --> works on Entity         
+interface StudentDAO extends crudRepo<StudentEntity, INTERGER>          
 
 
+### controller 
 
-Custom JPA Query
+Use Bean here           
+return--> ResponseEntity<Bean> --> body, status         
+
+
+
+### Custom JPA Query
 
 remove extends CRUDRepo or JPARepo
 
-add annotations
+add annotations             
 
-@RepositoryDefinition(idClass=Integer,domainClass=Entity)
-@Transactional
-
-
-@Query("JPQL")
-@Query("SQL", nativeQuery=true)
+@RepositoryDefinition(idClass=Integer,domainClass=Entity)           
+@Transactional  
 
 
+@Query("JPQL")          
+@Query("SQL", nativeQuery=true)         
 
 
+Annotation |	Meaning
+---------- | ------------
+@Component |	generic stereotype for any Spring-managed component
+@Repository	| stereotype for persistence layer
+@Service |	stereotype for service layer
+@Controller |	stereotype for presentation layer (spring-mvc)
+
+
+> @Service, @Controller, @Repository = {@Component + some more special functionality}
 
 
 
