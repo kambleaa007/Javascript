@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: Demo10013_Spring_Boot_Project_Structure
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: a.x.krishna
+Implementation-Vendor-Id: com.lkm.accenture
+Build-Jdk: 1.8.0_251
+Implementation-URL: http://projects.spring.io/spring-boot/Demo10013_Sp
+ ring_Boot_Project_Structure/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
