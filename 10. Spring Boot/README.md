@@ -140,4 +140,43 @@ mysql
 mysql-connector-java
 
 
+Entity --> Represents Table
+NEVER USE OR RETURN TABLE ALWAYS
+NEVER EXPOSE DIRECTLY
+
+Create Bean --> POJO
+NO annotation like @Id
+
+DAO --> works on Entity
+interface StudentDAO extends crudRepo<StudentEntity, INTERGER>
+
+
+controller 
+Use Bean here
+return--> ResponseEntity<Bean> --> body, status
+
+
+
+Custom JPA Query
+
+remove extends CRUDRepo or JPARepo
+
+add annotations
+
+@RepositoryDefinition(idClass=Integer,domainClass=Entity)
+@Transactional
+
+
+@Query("JPQL")
+@Query("SQL", nativeQuery=true)
+
+
+
+
+
+
+
+
+
+
 
