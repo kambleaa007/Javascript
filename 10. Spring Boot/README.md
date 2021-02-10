@@ -28,8 +28,8 @@ adrian cockroft at netflix -> fince grained SOA
 install puttyGen            
 
 pom     
-parent starter          
-child starter       
+parent starter  (basic starter)            
+child starter (your given)      
 
 embedded tomcat server provided by dependency               
 plugin ->fat jar-> deployable artifact-> bigger size->controller->spring rest->annotation           
@@ -58,6 +58,29 @@ Importing XML configuration
 SpringApplication is Class      
 -> run method       
 -> pass classname, cmd args[]           
+
+* bootstrap
+* create ApplicationContext instance ->spring container IoC DI
+* trigger CommandLineRunner beans
+* app.properties file --> read
+
+SpringApplication app = new (MyApplication.class)
+app.setBannerMode(Banner.Mode.OFF)
+
+ConfigurabeApplicationContext ctx = app.run(args) // return app context
+
+
+### Builder Pattern
+simplify way Object Creation
+keep adding things
+
+ClassObject obj = new ClassObject()
+                        .addOne()
+                        .addTwo()
+                        .addThree(); 
+
+
+
 
 @SpringBootConfiguration        
 @EnableAutoConfiguration        
@@ -157,7 +180,9 @@ interface StudentDAO extends crudRepo<StudentEntity, INTERGER>
 Use Bean here           
 return--> ResponseEntity<Bean> --> body, status         
 
+### JPA
 
+Building JPA Container EntityManagerFactory
 
 ### Custom JPA Query
 
@@ -171,6 +196,18 @@ add annotations
 
 @Query("JPQL")          
 @Query("SQL", nativeQuery=true)         
+
+
+@Modifying
+
+
+### Query Methods
+
+fixed keywords Supported Query Keywords
+name of method gets translated into query
+
+findBy --> select query
+
 
 
 Annotation |	Meaning
@@ -198,6 +235,134 @@ In Spring, bean scope is used to decide which type of bean instance should be re
 In most cases, you may only deal with the Spring’s core scope – singleton and prototype, and the default scope is singleton.            
 
 P.S * means only valid in the context of a web-aware Spring ApplicationContext
+
+
+### Profiles
+
+````
+@Profile("DEV")
+@Component
+class DevClassLogger{
+
+}
+````
+
+> app.prop
+> spring.profiles.active=DEV
+
+### load programmatic
+
+````
+ConfigurableEnvironment env = new StandardEnv();
+env.setActiveProfiles("DEV");
+
+app.setEnvironment(env);
+````
+
+### properties files
+
+
+
+### Customised
+
+````
+
+@Component
+@Profile("QA")
+class impl EmbeddedServeletContainerCustomizer{
+
+    @Override
+    customize(ConfigurableEmbeddedServletContainer cont){
+        cont.setContextPath("/MyApp")
+        cont.setPort(8090)
+    }
+
+}
+
+````
+
+### CommandLineRunner
+
+````
+    @Order(1)
+    @Component
+    class impl CommandLineRunner
+    {
+
+        @Override
+        run(){
+            
+        }
+
+    }
+
+    @Order(1)
+    @Component
+    class impl ApplicationRunner
+    {
+
+        @Override
+        run(ApplicationArguments args){
+            
+        }
+
+    }
+
+
+````
+
+Run as run arguments
+Spring Bott App --> Multiple Instances Running
+Running app --> on port 8080 
+You need one more instance --> run arguments --> server.port=8091           
+You need one more instance --> run arguments --> server.port=8092       
+three instances running         
+8080 8091 8092      
+
+You need one more instance --> run arguments --> server.port=8093 -Dspring.profiles.active=DEV           
+You need one more instance --> run arguments --> server.port=8094 -Dspring.profiles.active=QA
+       
+five instances running         
+8080 8091 8092 8093(DEV) 8094(QA)      
+
+
+### Logging
+
+LogBack File --> logback.xml
+
+app.prop -->
+
+logging.file=myLog.log
+logging.path=/
+logging.level.com.acc=INFO
+
+
+### Actuators
+Run on different port
+Production Ready Features, Monitoring
+
+Enable Endpoints
+management.security.enabled=false
+
+HAL Browser --> UI <dependency spring-data-rest-hal-browser>
+
+
+### RestTemplate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
