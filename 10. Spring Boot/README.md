@@ -55,6 +55,13 @@ Importing XML configuration
 // Primary configuration/runner class           
 @SpringBootApplication->combines three          
 
+
+@Configuration          
+@ComponentScan          
+@EnableAutoConfiguration            
+
+
+
 SpringApplication is Class      
 -> run method       
 -> pass classname, cmd args[]           
@@ -349,16 +356,64 @@ HAL Browser --> UI <dependency spring-data-rest-hal-browser>
 
 ### RestTemplate
 
+Consume services
+
+````
+
+RestTemplate rt = new RestTemplate() 
+String str = rt.getForObject("URL", String.class)
+
+ResponseEntity<Employee> e = rt.getForEntity("", Employee.class)
+
+rt.exchange("URL",HTTPMETHOD.GET, Employee.class)
+
+````
+
+### Testing
+
+@SpringBootTest(classes=Application.class)
+--> Starting up Application class --> return context     
+
+
+@Transactional    // rollback DB testing entries
+class Service{
+
+}
+
+// to make test class aware webappcontext
+@WebAppConfiguration        // we need web based context
+class TestClass{
+
+    @Autowired
+    WebApplicationContext ctx;
+
+    MockMvc mock;
+
+    @Before
+    mySetup(){
+        mock = MockMvcBuilders.webAppContextSetup(ctx).build();
+    }
+
+    @Test
+    getAllEmployeesTest(){
+
+    }
+
+}
 
 
 
 
 
+### Packaging
+
+<package>war</package>
+No Embedded Server --> need TomCat installed on server
+for JAR --> ( no need to deploy WAR files as embedded server are there )
 
 
 
-
-
+@Cacheable --> spring in memory 
 
 
 

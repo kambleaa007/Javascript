@@ -1,0 +1,37 @@
+1 Parallel Deployment for test (hits test db) and prod(hits production db)
+	2 ports, 2 context paths
+2 profile specific properties file
+3 property file inheritance
+
+
+first part to have 2 context paths require us to have cutomizers
+
+clean install spring-boot:run -Dspring.profiles.active=prod_profile
+	spring-boot-prod
+	8484
+http://localhost:8484/spring-boot-prod/emp/controller/getDetails
+
+clean install spring-boot:run -Dspring.profiles.active=test_profile
+	spring-boot-test
+	8486
+	
+	http://localhost:8486/spring-boot-test/emp/controller/getDetails
+	
+	
+	
+	
+	tell then how read the environment variable
+	
+	random_var in prod is used from parent
+	random_var in test is overridern by test properties  file
+	
+	you cannot print the read property in constructor
+	as property is injected after object creation is done by constructor
+	
+	you can activate multiple profiles in a  single run:
+	
+clean install spring-boot:run -Dspring.profiles.active=prod_profile,test_profile
+problem of multiple bean of same type and autowiring conflict
+can be resolved using @Qualifier or profiles	
+	
+	 

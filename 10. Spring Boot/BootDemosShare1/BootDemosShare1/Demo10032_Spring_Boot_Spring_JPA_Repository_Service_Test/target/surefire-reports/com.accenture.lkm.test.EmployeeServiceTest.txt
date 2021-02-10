@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.accenture.lkm.test.EmployeeServiceTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.205 sec - in com.accenture.lkm.test.EmployeeServiceTest

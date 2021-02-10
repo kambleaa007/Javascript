@@ -1,0 +1,13 @@
+server:
+   port: 8096
+
+# Database
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springbootdb
+    username: root
+    password: root
+    
+    
+
+ 

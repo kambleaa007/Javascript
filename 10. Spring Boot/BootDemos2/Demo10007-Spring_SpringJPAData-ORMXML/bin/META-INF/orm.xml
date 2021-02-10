@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="1.0" xmlns="http://java.sun.com/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+
+    <named-query name="EMP.query1_getAllEmployeesStringFunctions">
+        <query>select k, UPPER(k.name),LOWER(k.name),SUBSTRING(k.name,1,2),LENGTH(k.name)  from EmployeeEntityBean k</query>
+    </named-query>
+  
+    
+    <named-query name="EMP.query3_getAverageSalaryForEmployeesByRole">
+        <query>Select avg(k.salary), k.role from EmployeeEntityBean k group by k.role</query>
+    </named-query>
+</entity-mappings>

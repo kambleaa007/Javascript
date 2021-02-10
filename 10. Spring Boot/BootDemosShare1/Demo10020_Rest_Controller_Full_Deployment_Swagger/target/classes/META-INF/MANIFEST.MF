@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: Demo10020_Rest_Controller_Full_Deployment_Swagge
+ r
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: a.x.krishna
+Implementation-Vendor-Id: com.lkm.accenture
+Build-Jdk: 1.8.0_251
+Implementation-URL: http://projects.spring.io/spring-boot/Demo10020_Re
+ st_Controller_Full_Deployment_Swagger/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: Demo10034_Spring_Boot_Spring_JPA_Repository_Cont
+ roller_Unit_Test
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: a.x.krishna
+Implementation-Vendor-Id: com.lkm.accenture
+Build-Jdk: 1.8.0_251
+Implementation-URL: http://projects.spring.io/spring-boot/Demo10034_Sp
+ ring_Boot_Spring_JPA_Repository_Controller_Unit_Test/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

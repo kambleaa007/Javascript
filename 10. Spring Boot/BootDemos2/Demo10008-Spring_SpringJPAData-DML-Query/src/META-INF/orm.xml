@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="1.0" xmlns="http://java.sun.com/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+    
+    <named-query name="EMP.query4_update_salary">
+        <query>update EmployeeEntityBean k set k.salary= ?1 where k.name= ?2</query>
+    </named-query>
+    
+     <named-query name="EMP.query5_update_salary">
+        <query>update EmployeeEntityBean k set k.salary= :newSal where k.name= :empName</query>
+    </named-query>
+    
+</entity-mappings>
