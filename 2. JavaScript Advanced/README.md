@@ -640,6 +640,9 @@ or
 
 ## Callback Functions
 
+
+
+
 ## Filter
 
 ## Map
@@ -648,6 +651,7 @@ or
 
 ## Find
 
+## Reduce
 
 
 
