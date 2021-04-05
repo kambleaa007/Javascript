@@ -21,3 +21,17 @@ console.log(output)
 
 // running command
 // node .\ArraysMap.js
+// Output:
+// PS F:\spring-handson\Javascript\2. JavaScript Advanced\code> node .\ArraysMap.js       
+// {
+//   mark: [
+//     { name: 'waffle', price: '', quantity: '80' },
+//     { name: 'blender', price: '200', quantity: '1\r' },
+//     { name: 'knife', price: '10', quantity: '4\r' }
+//   ],
+//   nikita: [
+//     { name: 'waffle', price: '80', quantity: '1\r' },
+//     { name: 'knife', price: '18', quantity: '2\r' },
+//     { name: 'pot', price: '20', quantity: '3' }
+//   ]
+// }
