@@ -21,6 +21,8 @@ console.log(output)
 
 // running command
 // node .\ArraysMap.js
+
+
 // Output:
 // PS F:\spring-handson\Javascript\2. JavaScript Advanced\code> node .\ArraysMap.js       
 // {
