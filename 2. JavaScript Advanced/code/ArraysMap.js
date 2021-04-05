@@ -19,5 +19,5 @@ var output =
 
 console.log(output)
 
-// runnint commands
+// running command
 // node .\ArraysMap.js
