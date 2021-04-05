@@ -18,3 +18,6 @@ var output =
     )
 
 console.log(output)
+
+// runnint commands
+// node .\ArraysMap.js
