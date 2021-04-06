@@ -29,6 +29,13 @@ Gherkin-> Given, When, Then, And
 simple english
 
 
+* Write feature file
+
+* Write step definition
+    * @Given()
+    * @When(" Lines from feature files")
+
+> Angular Brackets <variables> 
 
 
 
