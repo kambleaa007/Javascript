@@ -10,7 +10,7 @@ Selenium comes with Two -> TDD and BDD
 ### TDD (Test Driven Developemnt)
 
 ### BDD (Behaviour Driven Development)
-easy to understand
+easy to understand, Plain English
 non technical person can understand
 business people can guide us
 
