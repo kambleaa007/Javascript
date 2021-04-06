@@ -13,8 +13,9 @@ Selenium comes with Two -> TDD and BDD
 easy to understand, Plain English
 non technical person can understand
 business people can guide us
+test case mean to fail
 
-Tools: Cucumber, SpecFlow
+Tools: Cucumber (Java), SpecFlow (.Net)
 
 
 
