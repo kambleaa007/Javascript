@@ -1,6 +1,11 @@
 # Fun Fun Function
 
 
+## split
+
+'ABCD'.split("")        // ['A','B','C','D']
+
+
 ## map
 
 ## filter
@@ -100,9 +105,49 @@ Any one fetch fails everything fails
 
 
 
+## Functor
+
+given value + function
+unwrap value into indivial parts
+feed those parts into given function
+then take values
+returns them in structured form
+
+
+.map()
+.filter()
+
+.forEach is not functor --> doent returns anything which is in stuctured form
+
+
+``````
+function plus1(val){
+        return val +1;
+}
+plus1(3)     // 4 works
+
+plus1([3,4]) // [4,5] but, breaks the code
+
+plus1('ABC') // BCD but, breaks the code
 
 
 
+
+
+
+// functors ---->
+
+[3,4].map(plus1)   // [4,5]
+
+
+function minus1(val){
+        return val -1;
+}
+
+[3,4].map(minus1)       // [2,3]
+[]
+
+``````
 
 
 
