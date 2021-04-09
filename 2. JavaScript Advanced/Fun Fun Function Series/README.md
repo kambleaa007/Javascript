@@ -45,10 +45,22 @@ greetMe("Hello World")
 
 
 
+## Promises
+
+Promise.all([
+        fetch(),
+        fetch(),
+        fetch()
+        ])
+        .then((i)=>{
+                i.forEach(j=>{console.log(j)})
+})
+.catch((err)=>{console.log(err)})
 
 
-
-
+Promises are composable
+Handle err at one place only
+Any one fetch fails everything fails
 
 
 
