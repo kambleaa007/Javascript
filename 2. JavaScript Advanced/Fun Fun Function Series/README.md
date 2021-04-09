@@ -45,6 +45,40 @@ greetMe("Hello World")
 
 
 
+
+### Recursion
+
+
+`````
+let categories = [
+        { id: 'animal', 'parent': null },
+        { id: 'mammal', 'parent': 'animal' },
+        { id: 'dog', 'parent': 'mammal' },
+        { id: 'cat', 'parent': 'mammal' },
+        { id: 'human', 'parent': 'mammal' }
+]
+
+let makeTree = (categories, parent) => {
+        let node = {}
+        categories
+                .filter(c=> c.parent === parent)
+                .forEach(c=> node[c.id] = makeTree(categories,c.id))
+        return node;        
+}
+
+console.log(
+        JSON.stringify(
+                makeTree(categories, null, 2)
+        )
+)
+
+`````
+> {"animal":{"mammal":{"dog":{},"cat":{},"human":{}}}}
+
+
+
+
+
 ## Promises
 
 Promise.all([
