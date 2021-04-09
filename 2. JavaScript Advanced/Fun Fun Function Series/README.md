@@ -107,6 +107,15 @@ Any one fetch fails everything fails
 
 ## Functor
 
+Objects that has .map() method are functors
+Arrays in JS implements map 
+Promises Streams Trees implements map
+
+.map() method takes functor content and transforms them using transformation callback passed to map
+returns same functor of same type
+contains transformed values 
+
+
 given value + function
 unwrap value into indivial parts
 feed those parts into given function
@@ -115,7 +124,13 @@ returns them in structured form
 
 
 .map()
+
+you can do .map().map().map().map() chaing with promises and streams
+
 .filter()
+is not functor
+
+
 
 .forEach is not functor --> doent returns anything which is in stuctured form
 
