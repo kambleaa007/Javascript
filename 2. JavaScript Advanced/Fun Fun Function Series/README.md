@@ -172,6 +172,7 @@ function minus1(val){
 
 ## MONAD
 
+functor implements .map()
 
 
 
