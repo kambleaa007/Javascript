@@ -174,7 +174,7 @@ function minus1(val){
 
 functor implements .map()
 
-
+monad is functor implents flatmap
 
 
 
